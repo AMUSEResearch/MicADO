@@ -1,0 +1,147 @@
+﻿{
+  "version":  3,  
+  "features": [
+    {
+      "id": "customer",
+      "name": "Customer",
+      "properties": [
+        {
+          "id": "customer_id",
+          "name": "id",
+          "weight": 1
+        },
+        {
+          "id": "customer_address",
+          "name": "Address",
+          "weight": 1
+        },
+        {
+          "id": "customer_name",
+          "name": "Name",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "order",
+      "name": "Order",
+      "properties": [
+        {
+          "id": "order_id",
+          "name": "id",
+          "weight": 1
+        },
+        {
+          "id": "order_customer_name",
+          "name": "Customer name",
+          "weight": 1
+        },
+        {
+          "id": "order_amount",
+          "name": "Amount",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "invoice",
+      "name": "Invoice",
+      "properties": [
+        {
+          "id": "invoice_id",
+          "name": "id",
+          "weight": 1
+        },
+        {
+          "id": "invoice_customer_name",
+          "name": "Customer name",
+          "weight": 1
+        },
+        {
+          "id": "invoice_order_amount",
+          "name": "Amount",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "sourceId": "invoice_order_amount",
+      "targetId": "order_amount"
+    },
+    {
+      "sourceId": "invoice_customer_name",
+      "targetId": "customer_name"
+    },
+    {
+      "sourceId": "order_customer_name",
+      "targetId": "customer_name"
+    }
+  ],
+  "microservices": [
+    {
+      "features": [
+        {
+          "type": "customer",
+          "internal": false,
+          "properties": [
+            "customer_id",
+            "customer_address",
+            "customer_name"
+          ]
+        }
+      ]
+    },
+    {
+      "features": [
+        {
+          "type": "order",
+          "internal": false,
+          "properties": [
+            "order_id",
+            "order_customer_name",
+            "order_amount"
+          ]
+        },
+        {
+          "type": "customer",
+          "internal": true,
+          "properties": [
+            "customer_id",
+            "customer_name"
+          ]
+        }
+      ]
+    },
+    {
+      "features": [
+        {
+          "type": "invoice",
+          "internal": false,
+          "properties": [
+            "invoice_id",
+            "invoice_customer_name",
+            "invoice_order_amount"
+          ]
+        },
+        {
+          "type": "customer",
+          "internal": true,
+          "properties": [
+            "customer_id",
+            "customer_name"
+          ]
+        },
+        {
+          "type": "order",
+          "internal": true,
+          "properties": [
+            "order_id",
+            "order_amount"
+          ]
+        }
+      ]
+    }
+  ]
+}

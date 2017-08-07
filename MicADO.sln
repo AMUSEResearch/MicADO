@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.Models", "MicADO.Models\MicADO.Models.csproj", "{1BA37589-9DDA-41DD-8494-5EABEFCBE290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.GeneticAlgorithm", "MicADO.GeneticAlgorithm\MicADO.GeneticAlgorithm.csproj", "{1DD4BF63-FF9D-4682-B653-5B7AC9BEB675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micado.Models.Tests", "Micado.Models.Tests\Micado.Models.Tests.csproj", "{48CEAAED-7D79-47A1-87E2-1B57F9F14A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.GeneticAlgorithm.Tests", "MicADO.GeneticAlgorithm.Tests\MicADO.GeneticAlgorithm.Tests.csproj", "{2C61B7B1-5E9D-43A3-BB42-1BEF5259DB8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.IO", "MicADO.IO\MicADO.IO.csproj", "{5E520328-B06F-433A-A9B2-95B1988AC94E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.Visualizer", "MicADO.Visualizer\MicADO.Visualizer.csproj", "{28F693B9-8B30-4C83-82E2-2CF8946669F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleImplementation", "SampleImplementation\SampleImplementation.csproj", "{C8D18777-6678-4B6F-8F1F-048120BFA0B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicADO.IO.Tests", "MicADO.IO.Tests\MicADO.IO.Tests.csproj", "{9C6FE2AE-A37F-4F36-AF1E-7CBE54573996}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{236E40FC-D3B0-4552-B2E1-890AD9A49B9C}"
+	ProjectSection(SolutionItems) = preProject
+		deployment.jpg = deployment.jpg
+		LICENSE.txt = LICENSE.txt
+		overview.jpg = overview.jpg
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BA37589-9DDA-41DD-8494-5EABEFCBE290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA37589-9DDA-41DD-8494-5EABEFCBE290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA37589-9DDA-41DD-8494-5EABEFCBE290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA37589-9DDA-41DD-8494-5EABEFCBE290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD4BF63-FF9D-4682-B653-5B7AC9BEB675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD4BF63-FF9D-4682-B653-5B7AC9BEB675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD4BF63-FF9D-4682-B653-5B7AC9BEB675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD4BF63-FF9D-4682-B653-5B7AC9BEB675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CEAAED-7D79-47A1-87E2-1B57F9F14A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CEAAED-7D79-47A1-87E2-1B57F9F14A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CEAAED-7D79-47A1-87E2-1B57F9F14A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CEAAED-7D79-47A1-87E2-1B57F9F14A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C61B7B1-5E9D-43A3-BB42-1BEF5259DB8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C61B7B1-5E9D-43A3-BB42-1BEF5259DB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C61B7B1-5E9D-43A3-BB42-1BEF5259DB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C61B7B1-5E9D-43A3-BB42-1BEF5259DB8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E520328-B06F-433A-A9B2-95B1988AC94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E520328-B06F-433A-A9B2-95B1988AC94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E520328-B06F-433A-A9B2-95B1988AC94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E520328-B06F-433A-A9B2-95B1988AC94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F693B9-8B30-4C83-82E2-2CF8946669F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F693B9-8B30-4C83-82E2-2CF8946669F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F693B9-8B30-4C83-82E2-2CF8946669F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F693B9-8B30-4C83-82E2-2CF8946669F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D18777-6678-4B6F-8F1F-048120BFA0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D18777-6678-4B6F-8F1F-048120BFA0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D18777-6678-4B6F-8F1F-048120BFA0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D18777-6678-4B6F-8F1F-048120BFA0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6FE2AE-A37F-4F36-AF1E-7CBE54573996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6FE2AE-A37F-4F36-AF1E-7CBE54573996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6FE2AE-A37F-4F36-AF1E-7CBE54573996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6FE2AE-A37F-4F36-AF1E-7CBE54573996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsai.afasgroep.nl/tfs/next
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MicADO.Models\\MicADO.Models.csproj
+		SccProjectName1 = MicADO.Models
+		SccLocalPath1 = MicADO.Models
+		SccProjectUniqueName2 = MicADO.GeneticAlgorithm\\MicADO.GeneticAlgorithm.csproj
+		SccProjectName2 = MicADO.GeneticAlgorithm
+		SccLocalPath2 = MicADO.GeneticAlgorithm
+		SccProjectUniqueName3 = Micado.Models.Tests\\Micado.Models.Tests.csproj
+		SccProjectName3 = Micado.Models.Tests
+		SccLocalPath3 = Micado.Models.Tests
+		SccProjectUniqueName4 = MicADO.GeneticAlgorithm.Tests\\MicADO.GeneticAlgorithm.Tests.csproj
+		SccProjectName4 = MicADO.GeneticAlgorithm.Tests
+		SccLocalPath4 = MicADO.GeneticAlgorithm.Tests
+		SccProjectUniqueName5 = MicADO.IO\\MicADO.IO.csproj
+		SccProjectName5 = MicADO.IO
+		SccLocalPath5 = MicADO.IO
+		SccProjectUniqueName6 = MicADO.Visualizer\\MicADO.Visualizer.csproj
+		SccProjectName6 = MicADO.Visualizer
+		SccLocalPath6 = MicADO.Visualizer
+		SccProjectUniqueName7 = SampleImplementation\\SampleImplementation.csproj
+		SccProjectName7 = SampleImplementation
+		SccLocalPath7 = SampleImplementation
+		SccProjectUniqueName8 = MicADO.IO.Tests\\MicADO.IO.Tests.csproj
+		SccProjectName8 = MicADO.IO.Tests
+		SccLocalPath8 = MicADO.IO.Tests
+	EndGlobalSection
+EndGlobal
