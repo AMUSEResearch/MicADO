@@ -2,7 +2,7 @@
 
 
 ## Introduction
-------------
+
 ##### MicADO (Microservice Archicture Deployment Optimizer) is a tool designed to improve the performance of a microservice architecture by workload-based feature clustering.
 
 ![MicADO overview](overview.jpg)
@@ -12,11 +12,11 @@ As shown in the above overview picture, the input for MicADO is a ``Deployment M
 This tool is the result of a [thesis research](https://dspace.library.uu.nl/bitstream/handle/1874/348022/thesis-3816958-microservices.pdf?sequence=1), resulting in the ['Workload-Based Clustering of Coherent Feature Sets in Microservice Architectures'](http://ieeexplore.ieee.org/document/7930194) paper.
 For more information about MicADO we refer the user to these documents. It should be noted that the thesis describes the V2 format, which has been replaced by V3 (described below).
 
-------------
+
 ## Requirements
 - .Net Framework 4.6.1 (C# 7.0)
 
-------------
+
 ## Dependencies
 - Newtonsoft.Json (10.0.3)
 - CommandlineParser (2.1.1-beta)
@@ -27,7 +27,7 @@ For more information about MicADO we refer the user to these documents. It shoul
 **Testing dependencies:**
 - FakeItEasy (4.0.0)
 - NUnit (3.7.1)
-------------
+
 ## Installation
 ```git
     git clone https://github.com/AFASResearch/MicADO
@@ -39,7 +39,7 @@ Open ``Micado.sln`` in Visual Studio (2017). Now build the entire solution (this
 
 The downloaded solution contains two console projects that can be executed: ``MicADO.Visualizer`` and ``SampleImplementation``. As the names indicate, the Visualizer project can be used to generate a SVG representation of a Deployment Model. The SampleImplementation project provides a sample for users that want to use MicADO for their microservice architecture.
 
----
+
 ## Running the Visualizer
 After you have build the solution, you can execute the ``Micado.Visualizer`` executable. This program takes the following arguments:
 
@@ -117,7 +117,6 @@ These feature instances can either be internal (not queryable by other microserv
 The ``type`` of a feature instance refers to the ``id`` of a feature in the ``features`` top-level array. The ``internal`` attribute determines whether this feature instance is internal or not. Finally the `properties` array refers to the ``id``'s of of properties of features in the top-level ``features`` array.
 This array indicates which properties are available for this (internal) instance. A public feature instance MUST always have all properties defined by the feature.
 
----
 ## Running The SampleImplementation
 
 ``shell
@@ -137,7 +136,7 @@ cd SampleImplementation\bin\Debug
 SampleImplementation.exe -d deploymentmodel.json -o C:\temp\optimized_deploymentmodel.json
 ```
 
----
+
 ## Using the MicADO framework for your case
 
 We have included a ``SampleImplementation`` that shows an implementation of the MicADO framework. 
@@ -147,7 +146,8 @@ As shown by the SampleImplementation, you can use several components provided by
 Minimally you need to create a ``Workload`` and an corresponding ``IFitnessEvaluater``.
 
 We suggest you take a look at the source code of the ``SampleImplementation``. MicADO provides a ``QueueingTheoryInfo`` representation that contains the theory described in the paper to calculate the new queueing theory metrics as a result of merging two microservices. In case you still have questions after looking at the ``SampleImplementation`` feel free to contact us.
----
+
+
 ## LICENSE
 
 See License.txt file
