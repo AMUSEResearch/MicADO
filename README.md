@@ -18,7 +18,7 @@ For more information about MicADO we refer the user to these documents. It shoul
 
 
 ## Dependencies
-- Newtonsoft.Json (10.0.3)
+- Newtonsoft.Json (13.0.1)
 - CommandlineParser (2.1.1-beta)
 
 **(Optional) Visualizer dependencies:**
